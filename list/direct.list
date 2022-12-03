@@ -8,3 +8,8 @@ DOMAIN-SUFFIX,mddcloud.com.cn
 DOMAIN-SUFFIX,ddys.tv
 DOMAIN-SUFFIX,agefans.app
 DOMAIN-SUFFIX,aliyundrive.asia
+
+# Emby
+DOMAIN-SUFFIX,ddnsjp.titams.xyz
+DOMAIN-SUFFIX,emby.o9o.nl
+
