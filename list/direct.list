@@ -1,0 +1,18 @@
+# SSH
+DST-PORT,22,DIRECT
+
+
+# Syncnext
+DOMAIN-SUFFIX,movie.douban.com
+DOMAIN-SUFFIX,mddcloud.com.cn
+DOMAIN-SUFFIX,ddys.tv
+DOMAIN-SUFFIX,agefans.app
+DOMAIN-SUFFIX,aliyundrive.asia
+
+# Emby
+DOMAIN-SUFFIX,ddnsjp.titams.xyz
+DOMAIN-SUFFIX,emby.o9o.nl
+
+
+# 1Password
+DOMAIN-SUFFIX,1password.com
