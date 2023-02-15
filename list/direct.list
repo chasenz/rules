@@ -1,7 +1,6 @@
 # SSH
 DST-PORT,22,DIRECT
 
-
 # Syncnext
 DOMAIN-SUFFIX,movie.douban.com
 DOMAIN-SUFFIX,mddcloud.com.cn
