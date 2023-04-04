@@ -29,4 +29,5 @@ external-controller: '127.0.0.1:9090'
 
 profile:
   # open tracing exporter API
-  tracing: false
+  tracing: true
+
