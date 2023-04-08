@@ -15,3 +15,6 @@ DOMAIN-SUFFIX,cdn.misakaf.org
 
 # 1Password
 DOMAIN-SUFFIX,1password.com
+
+# direct
+IP-CIDR,168.138.187.120/29,no-resolve
