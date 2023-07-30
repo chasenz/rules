@@ -35,3 +35,10 @@ cfw-conn-break-strategy:
   proxy: chain # none/chain/all
   profile: false # true/false
   mode: true # true/false
+
+# rulesets:
+#   enabled: true
+#   overwrite_original_rules: true
+#   update_ruleset_on_request: false
+#   rulesets:
+# #  - {rule: "GEOIP,CN", group: "DIRECT"}
