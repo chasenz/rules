@@ -1,5 +1,5 @@
 # SSH
-DST-PORT,22,DIRECT
+# DST-PORT,22,DIRECT
 
 # Syncnext
 DOMAIN-SUFFIX,movie.douban.com
