@@ -2,5 +2,8 @@
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,cursor.so
 
+# Img
+DOMAIN-SUFFIX,imgur.com
+
 # Pod
 IP-CIDR,168.138.187.120/29,no-resolve
