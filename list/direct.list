@@ -15,3 +15,7 @@ DOMAIN-SUFFIX,cdn.misakaf.org
 
 # 1Password
 DOMAIN-SUFFIX,1password.com
+
+
+# Finance
+DOMAIN-SUFFIX,interactivebrokers.com
