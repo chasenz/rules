@@ -17,3 +17,6 @@ DOMAIN-SUFFIX,linkedin.at
 DOMAIN-SUFFIX,linkedin.cn
 DOMAIN-SUFFIX,linkedin.com
 DOMAIN-SUFFIX,lnkd.in
+
+# AI
+DOMAIN-SUFFIX,perplexity.ai
