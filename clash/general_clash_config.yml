@@ -54,15 +54,15 @@ dns:
       - +.stun.*.*.*
       - +.stun.*.*.*.*
       - +.stun.*.*.*.*.*
-      - *.n.n.srv.nintendo.net
+      - '*.n.n.srv.nintendo.net'
       - +.stun.playstation.net
       - xbox.*.*.microsoft.com
-      - *.*.xboxlive.com
+      - '*.*.xboxlive.com'
       - apps.apple.com
       - lab.chasen.blog
-      - *.baidu.com
+      - '*.baidu.com'
       - 192.168.10.1
-      - *.lan
+      - '*.lan'
       - localhost.ptlogin2.qq.com
       - +.stun.*.*
      
