@@ -51,16 +51,16 @@ dns:
   enhanced-mode: fake-ip # 模式：redir-host或fake-ip
   fake-ip-range: 198.18.0.2/16 #
   fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
-      - +.stun.*.*.*
-      - +.stun.*.*.*.*
-      - +.stun.*.*.*.*.*
-      - +.stun.playstation.net
-      - xbox.*.*.microsoft.com
-      - apps.apple.com
-      - lab.chasen.blog
-      - 192.168.10.1
-      - localhost.ptlogin2.qq.com
-      - +.stun.*.*
+      # - +.stun.*.*.*
+      # - +.stun.*.*.*.*
+      # - +.stun.*.*.*.*.*
+      # - +.stun.playstation.net
+      # - xbox.*.*.microsoft.com
+      # - apps.apple.com
+      # - lab.chasen.blog
+      # - 192.168.10.1
+      # - localhost.ptlogin2.qq.com
+      # - +.stun.*.*
      
   nameserver:
      - 223.5.5.5 # 阿里DNS
