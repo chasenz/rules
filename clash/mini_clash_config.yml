@@ -1,0 +1,78 @@
+# Clash / Mihomo 远程订阅精简基础配置
+# 由 subconverter 生成策略组与规则；本文件仅提供运行参数和 DNS 设置。
+
+mixed-port: 7890
+socks-port: 7891
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: warning
+ipv6: false
+
+# 降低多节点切换时的等待时间并提升并发建连效率。
+unified-delay: true
+tcp-concurrent: true
+
+external-controller: 127.0.0.1:9090
+secret: ""
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# DNS 使用 fake-ip 模式；国内域名优先由国内 DoH 解析，国外结果由可信公共 DNS 兜底。
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  respect-rules: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "+.localhost"
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.stun.*.*.*.*.*"
+    - "+.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "+.xboxlive.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "localhost.ptlogin2.qq.com"
+
+  # 用于解析 DoH 域名及代理服务器域名，必须是 IP 地址。
+  default-nameserver:
+    - 223.5.5.5
+    - 180.184.1.1
+    - 180.76.76.76
+    - 119.29.29.29
+
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
+  fallback:
+    - 8.8.8.8 # 谷歌DNS
+    - 1.1.1.1 # Cloudflare DNS
+    - tls://dns.rubyfish.cn:853
+    - https://1.1.1.1/dns-query
+    - https://dns.google/dns-query
+
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+  # Mihomo 会使用这组 DNS 解析订阅节点，避免代理 DNS 的循环依赖。
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
+  # 命中直连规则的域名固定使用国内 DNS，避免不必要的跨境查询。
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
